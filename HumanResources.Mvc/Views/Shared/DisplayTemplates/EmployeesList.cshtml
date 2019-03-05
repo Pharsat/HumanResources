@@ -1,0 +1,43 @@
+﻿@model IEnumerable<HumanResources.Mvc.Models.EmployeeViewModel>
+
+@{
+    ViewBag.Title = "View";
+}
+
+<h2>View</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NameEmployee)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ContractName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RoleName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AnnualSalary)
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NameEmployee)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ContractName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RoleName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AnnualSalary)
+            </td>
+        </tr>
+    }
+
+</table>

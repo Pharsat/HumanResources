@@ -63,6 +63,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\HumanResources.Business\HumanResources.Business.csproj">
+      <Project>{4534b4a7-f8eb-46fb-9990-a7de0465cb4d}</Project>
+      <Name>HumanResources.Business</Name>
+    </ProjectReference>
     <ProjectReference Include="..\HumanResources.Mvc\HumanResources.Mvc.csproj">
       <Project>{BE712515-5BA5-433F-92FC-913DABA373CA}</Project>
       <Name>HumanResources.Mvc</Name>
